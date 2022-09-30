@@ -19,6 +19,6 @@ public class OutsourcedEmployee extends Employee {
 
     @Override
     public Double payment() {
-        return super.payment() * 110 / 100 + additionalCharge ;
+        return super.payment() + additionalCharge * 110 / 100  ;
     }
 }
