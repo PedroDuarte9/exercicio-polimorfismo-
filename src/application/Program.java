@@ -19,6 +19,7 @@ public class Program {
         int n = sc.nextInt();
 
         for(int i=0; i<n; i++){
+            System.out.println("Employee #" + i + " data:");
             System.out.println("Outsourced (y/n) ?");
             char opc = sc.next().charAt(0);
                 if(opc == 'y') {
@@ -48,14 +49,13 @@ public class Program {
                     System.out.println("Digite o valor da Hora que é pago: ");
                     double valuePerHour = sc.nextDouble();
                     emp.add(new Employee(name, hours, valuePerHour));
+
                 }
         }
 
-
-
-
         for (Employee e : emp ) {
-            System.out.println(emp);
+            System.out.println(e.getName());
+            System.out.println(e.payment());
         }
 
 

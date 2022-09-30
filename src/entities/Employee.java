@@ -58,6 +58,12 @@ public class Employee {
         this.outsourcedEmployee = outsourcedEmployee;
     }
 
+    public Double payment(){
+        return hours * valuePerHours;
+    }
+
+
+
     @Override
     public String toString() {
         return "Employee{" +
