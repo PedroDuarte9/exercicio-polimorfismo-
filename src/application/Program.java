@@ -22,32 +22,22 @@ public class Program {
             System.out.println("Employee #" + i + " data:");
             System.out.println("Outsourced (y/n) ?");
             char opc = sc.next().charAt(0);
+            System.out.println("Digite o nome do funcionário: ");
+            sc.nextLine();
+            String name = sc.nextLine();
+
+            System.out.println("Digite a quantidade de horas trabalhadas: ");
+            int hours = sc.nextInt();
+
+            System.out.println("Digite o valor da Hora que é pago: ");
+            double valuePerHour = sc.nextDouble();
                 if(opc == 'y') {
-                    System.out.println("Digite o nome do funcionário: ");
-                    sc.nextLine();
-                    String name = sc.nextLine();
-
-                    System.out.println("Digite a quantidade de horas trabalhadas: ");
-                    int hours = sc.nextInt();
-
-                    System.out.println("Digite o valor da Hora que é pago: ");
-                    double valuePerHour = sc.nextDouble();
-
                     System.out.println("Digite o valor do Adicional: ");
                     double additionalCharger = sc.nextDouble();
 
                     emp.add(new OutsourcedEmployee(name, hours, valuePerHour, additionalCharger ));
                 }
                 else{
-                    System.out.println("Digite o nome do funcionário: ");
-                    sc.nextLine();
-                    String name = sc.nextLine();
-
-                    System.out.println("Digite a quantidade de horas trabalhadas: ");
-                    int hours = sc.nextInt();
-
-                    System.out.println("Digite o valor da Hora que é pago: ");
-                    double valuePerHour = sc.nextDouble();
                     emp.add(new Employee(name, hours, valuePerHour));
 
                 }
