@@ -53,10 +53,10 @@ public class Program {
                 }
         }
 
-        for (Employee e : emp ) {
-            System.out.println(e.getName());
-            System.out.println(e.payment());
-        }
+                for (Employee e : emp ) {
+                    System.out.println(e.getName()+ " " + "R$" + String.format("%.2f%n", e.payment()));
+
+                }
 
 
         sc.close();
